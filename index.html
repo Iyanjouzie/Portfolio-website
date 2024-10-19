@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible"content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/1c6a083901.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="/images/images/logo.png">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Web Developer</p>
+                    <h1>Hi, I'm<span> Iyan</span> <br>Jouzie From India</h1>
+                </div>
+    
+            </div>
+
+        </div>
+        <!----------about------------->
+       <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/images/images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>My name is Iyan Jouzie, and I am an 18-year-old aspiring web developer and software engineer. 
+                        With a strong foundation in HTML and CSS, along with a basic understanding of C and Python, 
+                        I am passionate about creating innovative and user-friendly web applications.
+                        I am eager to expand my skills and knowledge in programming and software development.
+
+                        Driven by curiosity and a commitment to continuous learning, I thrive on tackling new challenges and collaborating with others in the tech community. 
+                        I aim to leverage my skills to contribute to impactful projects and ultimately make a difference in the tech world.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links"onclick="opentab('Experience')">Experience</p>
+                            <p class="tab-links"onclick="opentab('Education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing web/App interfaces</li>
+                                <li><span>Web Development</span><br>Web app Development</li>
+                                <li><span>Creative</span><br>Graphic Designing</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Experience">
+                            <ul>
+                                <li><span>2018</span><br>Coding competition</li>
+                                <li><span>2019</span><br>Game Designign contest</li>
+                                <li><span>2024</span><br>Hackathons</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Education">
+                            <ul>
+                                <li><span>2023</span><br>High school Education(computer science)</li>
+                                
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+       </div>
+     <!-----------services---------------> 
+     <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Focuses on the needs and preferences of users.
+                        Involves research, user testing, and iterative design.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX</h2>
+                    <p>
+                         Use feedback to continually refine both UI and UX.
+                         Maintain visual and functional consistency across the product.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Keep interfaces clean and uncluttered, focusing on essential features.
+                        Provide users with clear feedback on their actions, such as button presses or loading states.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+     </div>
+     <!----------portfolio-------------------->
+     <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="/images/images/work-1.png">
+                    <div class="layer">
+                        <h3>Calculator</h3>
+                        <p>A dynamic calculator made using html css and javascript</p>
+                        <i class="fa-solid fa-calculator"></i>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/images/images/work-2.jpg">
+                    <div class="layer">
+                        <h3>To-Do List</h3>
+                        <p>To-Do List to help the people manage thier tasks in an efficient way</p>
+                        <i class="fa-solid fa-list"></i>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/images/images/work-3.jpg">
+                    <div class="layer">
+                        <h3>Calender</h3>
+                        <p>Easy to use Calender made using Html css and javascript</p>
+                        <i class="fa-solid fa-calendar-days"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+     </div>
+     <!----------------contact------------->
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Conact Me</h1>
+                    <p> <i class="fa-solid fa-paper-plane"></i>ijouzie@gmail.com</p>
+                    <P><i class="fa-solid fa-square-phone"></i>9150315734</P>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/iyan-jouzie-a38337327/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Iyanjouzie"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                
+                    
+
+                </div>
+                    <div class="contact-right">
+                        <form>
+                            <input type="text" name="name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+
+                    </div>
+
+                
+            </div>
+        </div>
+     </div>
+     <div class="copyright">
+        <p>Copyright © Iyan. Made with <i class="fa-solid fa-heart"></i> by Iyan Jouzie </p>
+     </div>
+       <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+       </script>
+       <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+       </script>
+
+    </body>
+</html>
